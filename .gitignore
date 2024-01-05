@@ -1,7 +1,8 @@
 .env
 /.env
 .vercel
-
+node_modules
+functions
 # netlify.toml
 # dist
 # dist/index.html

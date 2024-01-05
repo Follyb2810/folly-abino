@@ -8,6 +8,7 @@ const app = express();
 const cookieParser = require('cookie-parser');
 const { protectedRoutes, RefreshUser, UpdateUser } = require('./controller/authController');
 const folly = require('crypto').randomBytes(64).toString('hex')
+// const srverless = require('serverless-http')
 
 // console.log(folly)
 
@@ -56,7 +57,10 @@ app.use('/api/v1',AuthRoutes)
 app.use(protectedRoutes)
 app.use('/api/v1/refresh',RefreshUser)
 app.use('/api/v1/blog',BlogRoutes)
+
+
 app.listen(PORT, () => console.log('Folly is listening on port ' + PORT));
+// module.exports.handler = srverless(app)
 
 
 // var bodyParser = require('body-parser')
