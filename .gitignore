@@ -8,3 +8,6 @@ functions
 # dist/index.html
 # Local Netlify folder
 .netlify
+
+netlify.toml
+vercel.json
