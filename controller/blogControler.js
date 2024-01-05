@@ -1,4 +1,4 @@
-const { default: mongoose } = require("mongoose");
+const  mongoose  = require("mongoose");
 const BlogPost = require("../model/BlogModel");
 const User = require("../model/RegisterModel");
 const objectId = mongoose.Types.ObjectId
