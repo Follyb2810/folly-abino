@@ -6,3 +6,5 @@ functions
 # netlify.toml
 # dist
 # dist/index.html
+# Local Netlify folder
+.netlify
